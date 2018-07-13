@@ -1,0 +1,96 @@
+.db-list {
+  position: relative;
+  display: inline-block;
+  //height: calc(100vh - 70px);
+  min-height: calc(100vh - 70px);
+  //min-width: 100px;
+  width: 205px; // hardcoded
+  padding-top: 20px;
+  //background-color: #435d70;
+  //mix-blend-mode: multiply;
+
+  text-align: left;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #435d70;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
+
+  .add-db {
+    text-align: center;
+    padding: 6px 8px;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 24px;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #435d70;
+    }
+
+    .icon-add-db {
+      height: 24px;
+      width: 24px;
+      margin: 0 auto;
+      vertical-align: bottom;
+    }
+  }
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding: 0 8px;
+}
+

@@ -1,0 +1,46 @@
+@import "~mcr-components/assets/styles/mcr";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body {
+    height: 100%;
+    min-width: 1024px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-space-between {
+    justify-content: space-between;
+  }
+  
+  .flex-start {
+    justify-content: flex-start;
+  }
+  
+  .flex-direction-column {
+    flex-direction: column;
+  }
+  
+  mcr-grid {
+    .grid-dropdown-arrow,
+    .grid-up-arrow {
+      vertical-align: middle;
+    }
+  
+    .ag-cell {
+      font-size: 14px;
+    }
+  }

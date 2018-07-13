@@ -1,0 +1,12 @@
+<div class="bg-container"></div>
+
+<div class="flex flex-direction-column">
+  <div class="top-bar-container">
+    <mcr-top-bar [title]="'Playback portal'" [applications]="" [topBarListLabel]="'John Doe'" [displayNotificationsIcon]=true [displayAboutIcon]=true
+              [applications]=""
+               [actions]=""
+               [iconPath]="'assets/PP-icon.svg'"></mcr-top-bar>
+  </div>
+  <cuppa-slidemenu [menulist]="menuItemsArray" (open)="onMenuOpen()" (close)="onMenuClose()" (onItemSelect)="onItemSelect($event)"></cuppa-slidemenu>
+</div>
+

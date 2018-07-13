@@ -1,0 +1,36 @@
+<!--<button class="db-title">{{database.displayName}}-->
+<div class="db-title" (click)="toggleQueries()">database 1
+  <i class="fa fa-caret-down" *ngIf="!showQueries"></i>
+  <i class="fa fa-caret-up" *ngIf="showQueries"></i>
+</div>
+
+<div class="db-queries-container" *ngIf="showQueries">
+  <div class="db-query" (click)="getInteractions()">Query
+    <img class="icon icon-delete-query" src="assets/svgs/delete.svg" alt="Delete query" title="Delete query" (click)="deleteQuery()"/>
+  </div>
+
+  <div class="db-query">Q
+    <img class="icon icon-delete-query" src="assets/svgs/delete.svg" alt="Delete query" title="Delete query"/>
+  </div>
+
+  <div class="db-query">Queryqueryquery
+    <img class="icon icon-delete-query" src="assets/svgs/delete.svg" alt="Delete query" title="Delete query"/>
+  </div>
+
+  <div class="db-query">Query11
+    <img class="icon icon-delete-query" src="assets/svgs/delete.svg" alt="Delete query" title="Delete query"/>
+  </div>
+
+  <div class="db-query">Queryfsdfsdf
+    <img class="icon icon-delete-query" src="assets/svgs/delete.svg" alt="Delete query" title="Delete query"/>
+  </div>
+
+  <div class="db-query">dd
+    <img class="icon icon-delete-query" src="assets/svgs/delete.svg" alt="Delete query" title="Delete query"/>
+  </div>
+
+  <div class="db-query add-query" title="New query">
+    <img class="icon icon-add-query" src="assets/svgs/add-db-query.svg" alt="New query"/>
+    New query
+  </div>
+</div>
